@@ -1,0 +1,36 @@
+{
+  "name": "Semantic-UI-React-Storybook",
+  "version": "1.0.0",
+  "description": "Build/Use react components with the Semantic UI Framework",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -s ./semantic -p 9001",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RainerAtSpirit/Semantic-UI-React-Storybook.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "raw-loader": "^0.5.1",
+    "semantic-ui": "^2.2.7",
+    "style-loader": "^0.13.1"
+  },
+  "dependencies": {
+    "@kadira/react-storybook-addon-info": "^3.0.8",
+    "@kadira/storybook-deployer": "^1.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "semantic-ui-css": "^2.2.1",
+    "semantic-ui-react": "^0.63.4"
+  }
+}
