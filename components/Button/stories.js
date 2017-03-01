@@ -3,20 +3,26 @@ import {storiesOf} from '@kadira/storybook'
 import {Button} from 'semantic-ui-react'
 import {CCButton} from './CCButton'
 
-storiesOf('Button', module)
+storiesOf('CCButton', module)
 
   .addWithInfo(
-    'CCButton',
+    'Active by default',
     `
-    A CCButton
+    A CCButton 
 
     `,
     () => (
-      <div>
         <CCButton></CCButton>
-        <CCButton active={false}></CCButton>
-      </div>
-    ), {inline: false, propTables: [CCButton]})
+    ), {inline: true, propTables: [CCButton]})
 
+
+  .addWithInfo(
+    'inactive',
+    `
+    providing an active prop
+    `,
+    () => (
+        <CCButton active={false}></CCButton>
+    ), {inline: true, propTables: [CCButton]})
 
 
